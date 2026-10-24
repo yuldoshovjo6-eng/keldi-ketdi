@@ -4,67 +4,147 @@ index.html
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mening saytim</title>
+  <title>Ozod - Xotin Quli 👑</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff5f7;
+      color: #333;
+      margin: 0;
+      text-align: center;
+    }
+    header {
+      background: linear-gradient(135deg, #ec4899, #8b5cf6);
+      color: white;
+      padding: 60px 20px;
+    }
+    header h1 { font-size: 44px; margin: 0 0 10px; }
+    header p { font-size: 20px; margin: 0; }
+    section { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+    h2 { color: #be185d; }
+
+    /* Ustunli diagramma */
+    .qator { display: flex; align-items: center; margin: 12px 0; text-align: left; }
+    .nom { width: 150px; font-weight: bold; }
+    .chiziq { flex: 1; background: #fce7f3; border-radius: 20px; overflow: hidden; }
+    .to-ldi {
+      background: linear-gradient(90deg, #ec4899, #8b5cf6);
+      color: white; padding: 8px 12px; border-radius: 20px;
+      font-size: 14px; white-space: nowrap;
+    }
+
+    /* Doira diagramma */
+    .doira {
+      width: 220px; height: 220px; border-radius: 50%; margin: 20px auto;
+      background: conic-gradient(
+        #ec4899 0% 50%,
+        #8b5cf6 50% 70%,
+        #3b82f6 70% 90%,
+        #10b981 90% 100%);
+    }
+    .izoh { display: inline-block; text-align: left; font-size: 18px; line-height: 1.8; }
+
+    /* Oqim diagrammasi */
+    .oqim { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+    .quti {
+      background: white; border: 2px solid #8b5cf6; border-radius: 12px;
+      padding: 12px 24px; font-size: 18px; min-width: 260px;
+    }
+    .strelka { font-size: 26px; color: #ec4899; }
+
+    /* Sirlar kartalari */
+    .sirlar { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; }
+    .sir {
+      background: white; border-radius: 14px; padding: 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+    .sir h3 { margin-top: 0; color: #8b5cf6; }
+
+    button {
+      background: #ec4899; color: white; border: none; border-radius: 10px;
+      padding: 14px 30px; font-size: 18px; cursor: pointer; margin-top: 15px;
+    }
+    button:hover { background: #be185d; }
+    #javob { font-size: 22px; margin-top: 20px; min-height: 30px; color: #8b5cf6; }
+    footer { background: #be185d; color: white; padding: 20px; margin-top: 30px; }
+  </style>
 </head>
 <body>
-  <h1>Nimolopti! 👋</h1>
-  <p>osha xullas.</p>
+
+  <header>
+    <h1>👑 Ozod - Xotin Quli 👑</h1>
+    <p>Rasmiy, ishonchli va doim "Xo'p, jonim" deydigan sayt</p>
+  </header>
+
+  <section>
+    <h2>📊 Ozodning kunlik vazifalari</h2>
+    <div class="qator"><div class="nom">🍽️ Idish yuvish</div><div class="chiziq"><div class="to-ldi" style="width:90%">90%</div></div></div>
+    <div class="qator"><div class="nom">🛒 Bozorga borish</div><div class="chiziq"><div class="to-ldi" style="width:75%">75%</div></div></div>
+    <div class="qator"><div class="nom">👕 Kir yuvish</div><div class="chiziq"><div class="to-ldi" style="width:60%">60%</div></div></div>
+    <div class="qator"><div class="nom">🗣️ "Ha, azizam"</div><div class="chiziq"><div class="to-ldi" style="width:100%">100%</div></div></div>
+  </section>
+
+  <section>
+    <h2>🥧 Ozodning bir kuni</h2>
+    <div class="doira"></div>
+    <div class="izoh">
+      🟣 Xotin buyruqlari: <b>50%</b><br>
+      🟪 Uxlash: <b>20%</b><br>
+      🔵 Ishlash: <b>20%</b><br>
+      🟢 O'z dam olishi: <b>10%</b> (agar ruxsat bo'lsa)
+    </div>
+  </section>
+
+  <section>
+    <h2>🔄 Xotin qulligi sxemasi</h2>
+    <div class="oqim">
+      <div class="quti">👩 Xotin buyruq beradi</div>
+      <div class="strelka">⬇️</div>
+      <div class="quti">🧍 Ozod: "Xo'p, jonim!"</div>
+      <div class="strelka">⬇️</div>
+      <div class="quti">🏃 Ozod darrov bajaradi</div>
+      <div class="strelka">⬇️</div>
+      <div class="quti">🌹 Maqtov oladi</div>
+      <div class="strelka">🔁 Yana yangi buyruq!</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🤫 Xotin qulligining sirlari</h2>
+    <div class="sirlar">
+      <div class="sir"><h3>🥇 1-sir</h3><p>Xotin doim haq. Haq bo'lmasa, 1-sirga qayting.</p></div>
+      <div class="sir"><h3>🥈 2-sir</h3><p>"Nima bo'ldi?" degan savolga "Hech narsa" javobi eng xavfli.</p></div>
+      <div class="sir"><h3>🥉 3-sir</h3><p>Tug'ilgan kunni eslab qolish uchun telefonga 5 ta eslatma qo'ying.</p></div>
+      <div class="sir"><h3>🍰 4-sir</h3><p>Shirinlik hamma muammoni 50% hal qiladi.</p></div>
+      <div class="sir"><h3>🧹 5-sir</h3><p>Idish yuvgan er hech qachon yomon ko'rinmaydi.</p></div>
+      <div class="sir"><h3>❤️ 6-sir</h3><p>Asl sir: bu qullik emas, bu muhabbat va hurmat!</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🎲 Ozodning kayfiyatini bilish</h2>
+    <button onclick="kayfiyat()">Ozodga savol ber</button>
+    <div id="javob"></div>
+  </section>
+
+  <footer>
+    <p>© 2026 Ozod - Xotin Quli Rasmiy Sayti 😄 (hazil uchun)</p>
+  </footer>
+
+  <script>
+    const javoblar = [
+      "Xo'p, jonim! 🫡",
+      "Hozir qilaman, azizam! 🏃",
+      "Bugun idish yuvish navbati menda 🍽️",
+      "Bozorga ketdim, nima olay? 🛒",
+      "Siz haqsiz, har doim! 👑"
+    ];
+    function kayfiyat() {
+      const tasodif = Math.floor(Math.random() * javoblar.length);
+      document.getElementById("javob").textContent = javoblar[tasodif];
+    }
+  </script>
+
 </body>
-   <link rel="stylesheet" href="style.css">
 </html>
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f4f8;
-  color: #333;
-  text-align: center;
-  margin: 0;
-}
-
-nav {
-  background-color: #2563eb;
-  padding: 15px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-size: 18px;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-section {
-  padding: 60px 20px;
-}
-
-h1 {
-  color: #2563eb;
-  font-size: 48px;
-}
-
-h2 {
-  color: #2563eb;
-}
-
-p {
-  font-size: 20px;
-  line-height: 1.6;
-}
-
-.tugma {
-  display: inline-block;
-  background-color: #2563eb;
-  color: white;
-  padding: 12px 28px;
-  border-radius: 8px;
-  text-decoration: none;
-  margin-top: 15px;
-}
-
-.tugma:hover {
-  background-color: #1d4ed8;
-}
-<!-- test -->
